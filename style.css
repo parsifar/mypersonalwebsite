@@ -343,17 +343,22 @@ html{
     top:0;
     left:0;
     width:100vw;
-    height:100vh;
+    height:130vh;
     background: var(--orange);
-    clip-path: circle(0% at 0 0);
     display:flex;
     justify-content: center;
     align-items: center; 
     transition:all 800ms;
-    z-index: 25; 
+    z-index: 25;
+    border-bottom-right-radius: 160px;
+    transform: translate(-50vw, -90vh) scale(0.1) ; 
+    border-bottom:5px solid var(--grey);
 }
 .active{
-    clip-path: circle(150% at 0 0);
+    transform:translate(0,0) scale(1);
+}
+.menu ul{
+    margin-bottom: 30vh;
 }
 .menu li{
     list-style: none;
