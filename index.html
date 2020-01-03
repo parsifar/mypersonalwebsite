@@ -8,14 +8,17 @@
     <meta name="description" content="Hi, I'm Ali Parsifar, a front end web developer based in Toronto, Canada">
     <title>Ali Parsifar - Junior Web Developer</title>
     <link rel="stylesheet" href="/style.css">
-    <script src="/code.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <section class="container first-container" id="top">
         <h1 id="site-title">Front-End Web Developer</h1>
-        <button id="menu-btn">menu</button>
+        <button id="menu-btn">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+        </button>
         <img id="monitor" src="/images/monitor.svg" alt="">
         <div class="hi-div">
             <p>Hi, I'm Ali Parsifar</p>
@@ -137,9 +140,22 @@
 
         </div>
     </section>
+    <!-- top button -->
     <a href="#top" id="top-btn">&#8679;</a>
 
+    <!-- hamburger menu -->
+    <section class="menu" id="menu">
+        <nav>
+            <ul>
+                <button id="menu-close-btn">&times;</button>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#work">WORK</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </section>
 
+    <script src="/code.js"></script>
 </body>
 
 </html>
