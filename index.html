@@ -8,28 +8,31 @@
     <title>Ali Parsifar - Junior Web Developer</title>
     <link rel="stylesheet" href="/style.css">
     <script src="/code.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container first-container">
-        <h1 id="site-title">Junior Web Developer</h1>
+    <section class="container first-container">
+        <h1 id="site-title">Front-End Web Developer</h1>
         <button id="menu-btn">menu</button>
         <img id="monitor" src="/images/monitor.svg" alt="">
         <div class="hi-div">
             <p>Hi, I'm Ali Parsifar</p>
-            <p>I'm a junior web developer</p>
+            <p>I'm a front-end web developer based in Toronto</p>
         </div>
         <nav>
             <ul>
-                <li>ABOUT</li>
-                <li>WORK</li>
-                <li>CONTACT</li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#work">WORK</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
 
 
-    </div>
-    <div class="container about-container">
+    </section>
+
+    <!-- about -->
+    <section class="container about-container" id="about">
         <div class="col-1">
             <img id="profile-pic" src="/images/profile.png" alt="">
             <h2>ABOUT</h2>
@@ -41,8 +44,71 @@
                 engaging challenge to continually learn and improve my skills in creating new projects. What started
                 with a simple "Hello World" has become a full-fledged passion that only gets more exciting as the time
                 goes by. </p>
+            <div class="techs-div">
+                <h3>Technologies I use</h3>
+                <div class="logo-div">
+                    <img src="/images/logo/html.png" alt="HTML logo">
+                    <img src="/images/logo/css.png" alt="css logo">
+                    <img src="/images/logo/js.png" alt="javascript logo">
+                    <img id="jquery-logo" src="/images/logo/jquery.png" alt="jquery logo">
+                    <img src="/images/logo/sass.png" alt="sass logo">
+                    <img src="/images/logo/bootstrap.png" alt="bootstrap logo">
+                    <img id="git-logo" src="/images/logo/git.png" alt="git logo">
+                    <img src="/images/logo/wordpress.png" alt="wp logo">
+                </div>
+
+            </div>
         </div>
-    </div>
+    </section>
+    <!-- work -->
+    <section class="container work-container" id="work">
+        <div class="col-1">
+            <h2>WORK</h2>
+        </div>
+        <div class="col-2">
+            <div class="work-wrapper">
+                <div class="work-sample bestosteopathy">
+                </div>
+                <a href="https://www.bestosteopathy.ca" target="_blank">
+                    <div class="title-div">
+                        <h2>Best Osteopathy</h2>
+                        <h4>Local Business Website</h4>
+                    </div>
+                </a>
+
+            </div>
+            <div class="work-wrapper">
+                <div class="work-sample goodman">
+                </div>
+                <a href="https://www.medialead.ca" target="_blank">
+                    <div class="title-div">
+                        <h2>Goodman Lawyers</h2>
+                        <h4>Local Business Website</h4>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section class="container contact-container" id="contact">
+        <div class="col-1">
+            <h2>CONTACT</h2>
+        </div>
+        <div class="col-2">
+            <div class="content-wrapper">
+                <h2>Let's Talk!</h2>
+                <p>I am available for freelance projects and full-time employment.</p>
+                <h3>Ali Parsifar</h3>
+                <p>Front-End Web Developer</p>
+                <p>+1 (416) 826-1205</p>
+                <p>Parsifar@gmail.com</p>
+            </div>
+
+        </div>
+    </section>
+
+
 
 </body>
 

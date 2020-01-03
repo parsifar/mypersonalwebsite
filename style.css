@@ -8,12 +8,12 @@
     --green:#036e00;
     --orange:#EDA838;
 }
-body{
-    font-family:Arial, Helvetica, sans-serif;
+html{
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 .container{
     text-align: center;
-    
 }
 .first-container{
     background:var(--grey);
@@ -57,35 +57,38 @@ nav{
     position:absolute;
     bottom:1rem;
     left:50%;
-    transform:translateX(-50%);
-    color:var(--orange);
+    transform:translateX(-50%);   
 }
 nav li{
     list-style:none;
     float:left;
-    padding:1em;
-    cursor: pointer;
     border-bottom:2px solid transparent;
+    transition:border 300ms;
+}
+nav li a{
+    color:var(--orange);
+    text-decoration: none;
+    display: block;
+    padding:1em;
 }
 nav li:hover{
     border-bottom:2px solid var(--orange)
 }
 /* about */
 .about-container{
-    display:flex;
-    
+    display:flex;   
 }
 .about-container .col-1{
     background:var(--orange);
-    flex-basis:50%;
-   
+    width:50%;  
 }
 .about-container .col-2{
-    flex-basis:50%;
+    width:50%;
 }
 .about-container .col-1 h2{
     color:var(--grey);
     font-size: 2rem;
+    margin-bottom:50vh;
     position: sticky;
     top:50%;
     left:25%;
@@ -93,10 +96,10 @@ nav li:hover{
 #profile-pic{
     width:160px;
     margin-top:20vh;
+    margin-bottom:20vh;
     position:sticky;
     top:20%;
     transform: translateX(calc(100vw / 4) );
-    
 }
 .about-container .col-2{
     padding:100px;
@@ -105,4 +108,140 @@ nav li:hover{
 .about-container .col-2 p{
     font-size:1.3rem;
     line-height: 1.4;
+}
+.techs-div{
+    text-align: center;
+    padding-top:4em;
+}
+.techs-div h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 2em;
+}
+.techs-div .logo-div{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.techs-div .logo-div img{
+    width:120px;
+    margin:1em;
+}
+#jquery-logo{
+    width:250px;
+}
+#git-logo{
+    width:180px;
+}
+
+/* work */
+.work-container{
+    display:flex;   
+}
+.work-container .col-1{
+    width:50%; 
+}
+.work-container .col-2{
+    width:50%; 
+}
+.work-container .col-1 h2{
+    color:var(--grey);
+    font-size: 2rem;
+    margin-top:50vh;
+    margin-bottom:50vh;
+    position: sticky;
+    top:50%;
+    left:25%;
+}
+.work-wrapper{
+    height:100vh;
+    overflow: hidden;
+    position: relative;
+    color:white;
+    margin:5px 0;
+}
+.work-wrapper a{
+    color:white;
+}
+
+.work-sample:hover{
+    transform: scale(1.25);
+}
+
+.bestosteopathy{
+    background:radial-gradient(
+        rgba(0, 0, 0, 0.1), 
+        rgba(0, 0, 0, 0.55)
+      ), url(./images/work-samples/bestosteopathy.png);
+    
+}
+.goodman{
+    background:radial-gradient(
+        rgba(0, 0, 0, 0.1), 
+        rgba(63, 61, 61, 0.55)
+      ), url(/images/work-samples/goodman.png);
+}
+.work-sample{
+    height: 100%;
+    transition:transform 10s linear;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.title-div{
+    position:absolute;
+    top:50%;
+    right:50%;
+    transform: translate(50%,50%);
+    background: rgba(0,0,0,.5);
+    padding:2em 5em;
+    border-radius: 1em;
+    transition:300ms;
+}
+.title-div:hover{
+    background:var(--grey);
+    color:var(--orange)
+}
+.title-div h2,.title-divh4{
+    font-weight: 400;
+    padding:5px;
+}
+
+/* contact */
+.contact-container{
+    display:flex;
+    height:100vh;
+    margin-top:-5px;   
+}
+.contact-container .col-1{
+    width:50%; 
+    background:var(--orange);
+}
+.contact-container .col-2{
+    width:50%; 
+}
+.contact-container .col-1 h2{
+    font-size: 2rem;
+    margin-top:50vh;
+}
+.contact-container .col-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--grey);
+    line-height: 1.5;
+    padding:1em;
+}
+.contact-container .col-2 h2{
+    font-size: 2rem;
+    padding:2em;
+}
+.contact-container .col-2 p{
+    font-size: 1.5rem;
+}
+.contact-container .col-2 h3{
+    font-size: 2rem;
+    font-weight: 400;
+    padding-top:1em;
 }
