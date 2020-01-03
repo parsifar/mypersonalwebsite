@@ -222,14 +222,14 @@ nav li:hover::after{
     background:radial-gradient(
         rgba(0, 0, 0, 0.1), 
         rgba(0, 0, 0, 0.55)
-      ), url(./images/work-samples/bestosteopathy.png);
+      ), url(./images/work-samples/bestosteopathy.jpg);
     
 }
 .goodman{
     background:radial-gradient(
         rgba(0, 0, 0, 0.1), 
         rgba(63, 61, 61, 0.55)
-      ), url(/images/work-samples/goodman.png);
+      ), url(/images/work-samples/goodman.jpg);
 }
 .work-sample{
     height: 100%;
